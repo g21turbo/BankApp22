@@ -18,7 +18,7 @@ public class Bank {
     }
 
     public boolean addCustomer(String branchName, String customerName, Double initialAmount) {
-        Branch branch = findBranch(branchname);
+        Branch branch = findBranch(branchName);
         if (branch != null) {
             return branch.newCustomer(customerName, initialAmount);
         }
